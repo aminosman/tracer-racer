@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "no-use-before-define": "off",
+    "import/extensions": ["error", "never"],
+    "react/prop-types": 0,
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "no-nested-ternary": "off",
+    "no-restricted-syntax": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "default-param-last": "off",
+    "lines-between-class-members": ["error", "never"],
+    "default-case": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "react/destructuring-assignment": "off",
+    "@typescript-eslint/no-var-requires": "off"
+  }
+}
